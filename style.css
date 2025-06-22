@@ -19,11 +19,15 @@ html {
 .hero {
     background: linear-gradient(135deg, #da3a4d, #da3a4d);
     color: white;
-    padding: 6rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
     justify-content: center;
     height: 60%;
 }
+
+/* .logo{
+    
+} */
 
 .hero-content {
     max-width: 900px;
@@ -510,7 +514,7 @@ html {
     .hero,
     .light-section,
     .cta-section {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .features-grid,
