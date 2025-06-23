@@ -17,7 +17,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="logocontainer">
-            <img src="assets/logo.png" alt="company logo" class="logo">
+            <img src="assets/logo3.png" alt="company logo" class="logo">
         </div>
         <div class="hero-content">
             <h1>Shaadi Ka Dance Banayein Perfect <b>– 1-on-1 Online Practice</b>, Ghar Baithe! </h1>
@@ -37,17 +37,36 @@
                 <p>No prior dance experience needed. Confidence and grace guaranteed.</p>
             </div>
             <ul class="benefits-list">
-                <li>Couple Entry</li>
+                <li>Couple's Dance</li>
                 <li>Solo Bride/Groom Performance</li>
-                <li>Family & Friends Group Dance</li>
+                <li>Family & Friends Group Dance choreography</li>
             </ul>
-            <div>
-                <a href="#pricing" class="btn btn-primary">💃 Book Your Trial</a>
-                <a href="https://wa.me/+918076122050" class="btn btn-secondary" target="_blank">💬 Enquiry on WhatsApp</a>
+            <div style="text-align: center;">
+                <!-- Trigger Button -->
+                <button class="interested_button" id="enquiry-whatsapp">💃 I Am Interested</button>
+
+                <!-- <a href="" class="btn btn-secondary" style="text-align: center;">💃 I Am Interested</a> -->
+                <!-- <a href="https://wa.me/+918076122050" class="btn btn-secondary" target="_blank">💬 Enquiry on WhatsApp</a> -->
             </div>
         </div>
     </section>
     
+    <!-- Modal -->
+<div id="whatsappModal" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:white; padding:20px; border:1px solid #ccc; z-index:1000;">
+    <h3>Enter Your Details</h3>
+    <input type="text" id="userName" placeholder="Your Name" style="width: 100%; margin-bottom: 10px;" />
+    <input type="email" id="email-id" placeholder="enter your email-id" style="width: 100%; margin-bottom: 10px;" />
+    <div class="modal-buttons">
+        <button onclick="sendToWhatsApp()" class="send-btn">Send via WhatsApp</button>
+        <!-- <button onclick="closeModal()" class="cancel-btn">Cancel</button> -->
+    </div>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;" onclick="closeModal()"></div>
+
+
+
     <!-- Video Section -->
     <section class="video-section" style="padding: 3rem 2rem;">
         <!-- <div class="vid-container">
@@ -88,8 +107,8 @@
     <!-- Testimonials -->
     <section class="testi-section" style="padding: 3rem 2rem;">
         <div class="container">
-            <h2
-                style="color: #da3a4d; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 600; text-align: center; margin-bottom: 2rem;">
+            <h2 class="text-color"
+                style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 600; text-align: center; margin-bottom: 2rem;">
                 Real Stories from Real Clients</h2>
                 <div class="testimonial-slider" id="testimonialSlider">
                     <div class="slider-container" id="sliderContainer">
@@ -139,7 +158,7 @@
                     <form class="whatsapp-form" onsubmit="sendtowhatsapp(event,'Express')">
                         <input type="text" name="Name" placeholder="your name" required>
                         <input type="email" name="email" placeholder="Email id" >
-                        <button type="submit" class="btn btn-primary"> Book Express </button>
+                        <button type="submit" class="btn btn-primary"> Consult For Express </button>
 
                     </form>
                     <!-- <a href="https://wa.me/8076122050?text=I want to book Express dance package" class="btn btn-primary"
@@ -152,7 +171,7 @@
                     <form class="whatsapp-form" onsubmit="sendtowhatsapp(event,'Classic')">
                         <input type="text" name="Name" placeholder="your name" required>
                         <input type="email" name="email" placeholder="Email id">
-                        <button type="submit" class="btn btn-primary"> Book Classic </button>
+                        <button type="submit" class="btn btn-primary"> Consult For Classic </button>
                     
                     </form>
                     
@@ -217,11 +236,12 @@
             <!-- Final CTA -->
             <section class="cta-section">
                 <div class="container">
+                    <h2>All Eyes On You -</h2>
                     <h2>Make Your Wedding Dance Unforgettable</h2>
             <p>In just 1–3 sessions, you'll be performance-ready with confidence and charm.</p>
             <div>
                 <a href="https://wa.me/+918076122050" class="btn btn-secondary">💬 Message on WhatsApp</a>
-                <a href="tel:+918076122050" class="btn btn-primary">📞 Call To Coach</a>
+                <a href="tel:+918076122050" class="btn btn-primary">📞 Call To Team</a>
             </div>
             <div class="urgency-text">
                 ⏳ Only 3 slots left this week!

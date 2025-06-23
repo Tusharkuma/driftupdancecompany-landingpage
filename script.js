@@ -77,7 +77,33 @@ dots.forEach(dot => {
     });
 });
 
-//whatsapp-form message
+// whatsapp enquire message
+document.getElementById("enquiry-whatsapp").addEventListener("click", function () {
+    document.getElementById("whatsappModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+});
+
+function closeModal() {
+    document.getElementById("whatsappModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+function sendToWhatsApp() {
+    const name = document.getElementById("userName").value.trim();
+    const email = document.getElementById("email-id").value.trim();
+
+    // if (!name || !interest) {
+    //     alert("Please fill in all fields.");
+    //     return;
+    // }
+
+    const message = `Hi, my name is *${name}* and email-id is *${email}*. I am interested in Online wedding dance course`;
+    const phoneNumber = "+918076122050"; 
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+}
+//whatsapp-form booking message
 
 function sendtowhatsapp(event,packageName){
     event.preventDefault();
