@@ -91,7 +91,7 @@ function sendtowhatsapp(event,packageName){
 
     //our credentials
     const encodedMessage = encodeURIComponent(message)
-    const phoneNumber = 8076122050;
+    const phoneNumber = +918076122050;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     //whatsapp redirect
