@@ -48,6 +48,7 @@ function nextSlide() {
   }
 
 function startSlider() {
+    clearInterval(slideInterval)
     slideInterval = setInterval(() => {
         if (!paused) nextSlide();
     }, 3000);
