@@ -97,7 +97,7 @@ function sendToWhatsApp() {
     //     return;
     // }
 
-    const message = `Hi, my name is *${name}* and email-id is *${email}*. I am interested in Online wedding dance course`;
+    const message = `Hi, my name is *${name}* and email-id is *${email}*. I am interested in wedding dance class`;
     const phoneNumber = "+918076122050"; 
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
