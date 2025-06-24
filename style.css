@@ -17,16 +17,20 @@ html {
 
 /* Hero Section */
 .hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
     background: linear-gradient(135deg, #161516, rgb(187, 34, 39));
     /* da3a4d */
     background-image: url('assets/background.png');
-    background-position: top left;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
     text-align: center;
-    justify-content: center;
+    justify-content: bottom center;
     height: 50%;
     z-index: 1;
     width: 100%;
@@ -44,29 +48,42 @@ html {
 
 .hero-content {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 140px auto 0px auto;
 }
 
 .hero h1 {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     font-weight: 600;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     line-height: 1.2;
+    padding: 0 10px;
 }
 
-.hero p {
+/* .hero p {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
-    margin: 0.5rem 0rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0rem 0rem;
     opacity: 0.95;
     font-weight: 400;
-}
+} */
 
 .hero .highlight {
+    /* position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+
     background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
+    padding: 1.5rem 40px;
     border-radius: 8px;
     margin: 2rem 0;
     border-left: 4px solid #fbbf24;
+    text-align:center;
+}
+
+.hero .p {
+    padding: 0 40px;
 }
 
 /* Light sections */
@@ -656,15 +673,51 @@ html {
     .hero,
     .light-section,
     .cta-section {
-        padding: 3rem 1rem;
+        padding: 5rem 0rem;
     }
 
     .hero {
-        background-image: url(assets/background.png);
+        /* position: relative;
+        display: flex;
+        align-items: flex-end; */
+        padding-bottom: 10px;
+        background-image: url(assets/right_background.png);
         background-position: center left;
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 0px;
+        margin-bottom: 8px;
+        /* padding: 5rem 0rem; */
     }
+
+    .hero-content{
+        display: block;
+        /* align-items: end; */
+        /* padding: 2px 0; */
+        padding: 5px 30px;
+    }
+    .hero-content h1 {
+        font-size: clamp(1.3rem, 3vw, 1.8rem);
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        gap: 0;
+        display:block;
+        align-items: top;
+        justify-content: top;
+        padding: 5px 0px;
+        padding-bottom: 0rem;
+    }
+
+    .hero-content .highlight{
+        padding: 5px 20px;
+    }
+    
+    .hero-content .highlight p {
+        font-size: clamp(0.6rem, 2.5vw, 1.1rem);
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+    
 
     .features-grid,
     .pricing-grid {
